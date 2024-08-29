@@ -1,4 +1,4 @@
-import { Schema, } from 'mongoose';
+/* import { Schema, } from 'mongoose';
 import { IComment } from '../../@types/@types';
 import nameSchema from './name-schema';
 
@@ -28,3 +28,4 @@ const commentSchema = new Schema<IComment>({
 });
 
 export default commentSchema;
+ */

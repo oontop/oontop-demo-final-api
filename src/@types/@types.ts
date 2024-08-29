@@ -56,7 +56,7 @@ export type IMergedPatient = {
 
 
 /////User Type/////
-
+/* 
 export type IName = {
     first: string;
     middle?: string;
@@ -116,5 +116,5 @@ export type IJWTPayload = {
 };
 
 
-
+ */
 

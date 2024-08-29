@@ -1,5 +1,5 @@
 
-import { IJWTPayload } from "./@types";
+/* import { IJWTPayload } from "./@types";
 
 declare global {
     namespace Express {
@@ -7,4 +7,4 @@ declare global {
             payload?: IJWTPayload
         }
     }
-}
+} */

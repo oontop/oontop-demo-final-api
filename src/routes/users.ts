@@ -1,4 +1,4 @@
-import { Router } from "express";
+/* import { Router } from "express";
 import { usersService } from "../services/users-service";
 import { validateLogin, validateUser } from "../middleware/joi";
 import { isAdmin } from "../middleware/is-admin";
@@ -71,3 +71,4 @@ router.delete("/:id", ...isAdmin, async (req, res, next) => {
 
 export default router;
 
+ */

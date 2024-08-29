@@ -1,13 +1,13 @@
 import { Router } from "express";
-import MergedPatient from "../db/models/merged-patient-model";
+/* import MergedPatient from "../db/models/merged-patient-model"; */
 import { mergedPatientService } from "../services/merged-patients-service";
-import Comment from '../db/models/comment-model';
-import { validateToken } from "../middleware/validate-token";
-import { commentService } from "../services/merged-patients-service";
+/* import Comment from '../db/models/comment-model'; */
+/* import { validateToken } from "../middleware/validate-token"; */
+/* import { commentService } from "../services/merged-patients-service"; */
 import OonTopError from "../errors/OonTopError";
 import { Logger } from "../logs/logger";
 import { validatePatient } from "../middleware/joi";
-import { isAdmin } from "../middleware/is-admin";
+/* import { isAdmin } from "../middleware/is-admin"; */
 
 
 
@@ -15,7 +15,7 @@ import { isAdmin } from "../middleware/is-admin";
 
 const router = Router();
 
-router.post('/comments', validateToken, async (req, res, next) => {
+/* router.post('/comments', validateToken, async (req, res, next) => {
     const { patientId, text } = req.body;
 
 
@@ -41,7 +41,7 @@ router.get("/comments/:id", async (req, res, next) => {
         next(e);
     }
 
-});
+}); */
 
 router.post('/', validatePatient, async (req, res, next) => {
     try {
@@ -75,7 +75,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 
-router.put("/:id", ...isAdmin, validateToken, validatePatient, async (req, res, next) => {
+router.put("/:id", /* ...isAdmin, validateToken, */ validatePatient, async (req, res, next) => {
     try {
         const result = await mergedPatientService.updateMergedPatient(req.params.id, req.body);
         if (!result) {
@@ -90,7 +90,7 @@ router.put("/:id", ...isAdmin, validateToken, validatePatient, async (req, res, 
 });
 
 
-router.delete("/:id", ...isAdmin, validateToken, async (req, res, next) => {
+router.delete("/:id", /* ...isAdmin, validateToken, */ async (req, res, next) => {
 
     try {
         await mergedPatientService.deleteMergedPatient(req.params.id);

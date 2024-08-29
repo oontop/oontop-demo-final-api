@@ -7,7 +7,7 @@ import errorHandler from './middleware/error-handler';
 import { Logger } from './logs/logger';
 import cors from 'cors';
 import { patientsRouter } from './routes/patients';
-import usersRouter from './routes/users';
+/* import usersRouter from './routes/users'; */
 import { mergedpatientsRouter } from './routes/mergedpatients';
 
 
@@ -23,7 +23,7 @@ app.use(logger);
 
 app.use(cors({ origin: "*" }))
 
-app.use("/api/v1/users", usersRouter);
+/* app.use("/api/v1/users", usersRouter); */
 app.use("/api/v1/patients", patientsRouter);
 app.use("/api/v1/merged-patients", mergedpatientsRouter);
 

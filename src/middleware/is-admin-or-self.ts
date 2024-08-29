@@ -1,4 +1,4 @@
-import { RequestHandler } from "express";
+/* import { RequestHandler } from "express";
 import OonTopError from "../errors/OonTopError";
 import { validateToken } from "./validate-token";
 
@@ -14,4 +14,4 @@ const _isAdminOrSelf: RequestHandler = (req, res, next) => {
 
 };
 
-export const isAdminOrSelf = [validateToken, _isAdminOrSelf] 
+export const isAdminOrSelf = [validateToken, _isAdminOrSelf]  */

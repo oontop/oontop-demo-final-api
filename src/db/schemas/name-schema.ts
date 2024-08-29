@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+/* import { Schema } from "mongoose";
 import { IName } from "../../@types/@types";
 
 
@@ -24,4 +24,4 @@ const nameSchema = new Schema<IName>({
     },
 });
 
-export default nameSchema;
+export default nameSchema; */

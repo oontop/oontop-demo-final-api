@@ -1,4 +1,4 @@
-import bcrypt, { } from "bcrypt";
+/* import bcrypt, { } from "bcrypt";
 import jwt, { } from "jsonwebtoken";
 import { IJWTPayload } from "../@types/@types";
 
@@ -29,4 +29,4 @@ export const authService = {
 
         return payload;
     },
-};
+}; */

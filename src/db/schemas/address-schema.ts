@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+/* import { Schema } from "mongoose";
 import { IAddress } from "../../@types/@types";
 
 
@@ -44,4 +44,4 @@ const addressSchema = new Schema<IAddress>({
 
 });
 
-export default addressSchema;
+export default addressSchema; */
