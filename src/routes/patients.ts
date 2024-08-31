@@ -1,9 +1,24 @@
 import { Router } from "express";
 import { patientService } from "../services/patient-service";
 
-
 const router = Router();
 
+/**
+ * @swagger
+ * /api/v1/patients:
+ *   get:
+ *     summary: Get all patients
+ *     description: Retrieve a list of all patients.
+ *     responses:
+ *       200:
+ *         description: A list of patients.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Patient'
+ */
 router.get("/", async (req, res, next) => {
     try {
         const patients = await patientService.getAllPatients();
@@ -13,7 +28,4 @@ router.get("/", async (req, res, next) => {
     }
 });
 
-
-
-export { router as patientsRouter }
-
+export { router as patientsRouter };

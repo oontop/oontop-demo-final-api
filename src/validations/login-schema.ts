@@ -1,4 +1,4 @@
-import Joi from "joi";
+/* import Joi from "joi";
 import { ILogin } from "../@types/@types";
 import { passwordRegex } from "./patterns";
 
@@ -7,4 +7,4 @@ const loginSchema = Joi.object<ILogin>({
     password: Joi.string().pattern(passwordRegex).required(),
 });
 
-export default loginSchema
+export default loginSchema */

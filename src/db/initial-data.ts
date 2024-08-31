@@ -1,4 +1,4 @@
-const users = [
+/* const users = [
     {
         name: {
             first: "Admin - Eliyahu",
@@ -64,7 +64,7 @@ const users = [
         "isAdmin": false
     }
 
-];
+]; */
 
 
 const patients = [
@@ -375,4 +375,4 @@ const patients = [
 ];
 
 
-export { users, patients };
+export { /* users, */ patients };

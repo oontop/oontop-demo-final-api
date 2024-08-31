@@ -1,4 +1,4 @@
-import Joi from "joi";
+/* import Joi from "joi";
 import { passwordRegex, phoneRegex } from "./patterns";
 import { IAddress, IName, IUser } from "../@types/@types";
 
@@ -31,4 +31,4 @@ const userSchema = Joi.object<IUser>({
 
 export default userSchema;
 
-export { addressSchema }
+export { addressSchema } */

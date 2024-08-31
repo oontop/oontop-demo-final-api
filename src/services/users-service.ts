@@ -1,4 +1,4 @@
-import { IJWTPayload, ILogin, IUserInput } from "../@types/@types";
+/* import { IJWTPayload, ILogin, IUserInput } from "../@types/@types";
 import User from "../db/models/user-model";
 import OonTopError from "../errors/OonTopError";
 import { authService } from "./auth-service";
@@ -55,3 +55,4 @@ export const usersService = {
         return user;
     },
 };
+ */

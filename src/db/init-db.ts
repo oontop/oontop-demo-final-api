@@ -1,12 +1,12 @@
 import { Logger } from "../logs/logger";
 import { patientService } from "../services/patient-service";
-import { usersService } from "../services/users-service";
-import { users, patients } from "./initial-data";
+/* import { usersService } from "../services/users-service"; */
+import { /* users, */ patients } from "./initial-data";
 import Patient from "./models/patient-model";
-import User from "./models/user-model";
+/* import User from "./models/user-model"; */
 
 const initDB = async () => {
-    const usersCount = await User.countDocuments();
+    /* const usersCount = await User.countDocuments();
 
     if (usersCount != 0) return;
 
@@ -15,7 +15,7 @@ const initDB = async () => {
         await usersService.createUser(userData);
 
 
-    }
+    } */
     const patientsCount = await Patient.countDocuments();
 
     if (patientsCount != 0) return;
@@ -27,7 +27,7 @@ const initDB = async () => {
 
     }
 
-    Logger.log("Users and Patients are Created");
+    Logger.log("Patients are Created");
 }
 
 export default initDB;

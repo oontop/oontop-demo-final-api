@@ -57,7 +57,7 @@ export type IMergedPatient = {
 
 /////User Type/////
 
-export type IName = {
+/* xport type IName = {
     first: string;
     middle?: string;
     last: string;
@@ -98,12 +98,12 @@ export type IComment = {
     name: IName,
 
 
-};
+}; */
 
 /////Login/////
 
 
-export type ILogin = {
+/* export type ILogin = {
     email: string;
     password: string;
 };
@@ -113,7 +113,7 @@ export type IJWTPayload = {
     _id: string,
     isAdmin: boolean,
     isBusiness: boolean,
-};
+}; */
 
 
 

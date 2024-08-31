@@ -1,10 +1,10 @@
-import { IComment, IMergedPatient } from "../@types/@types";
+import { /* IComment,  */IMergedPatient } from "../@types/@types";
 import MergedPatient from "../db/models/merged-patient-model";
-import { usersService } from "./users-service";
-import Comment from "../db/models/comment-model";
+/* import { usersService } from "./users-service"; */
+/* import Comment from "../db/models/comment-model"; */
 
 
-export const commentService = {
+/* export const commentService = {
 
     getAllCommentsById: async (patientId: string) => {
         const comments: IComment[] = await Comment.find({ mergedPatientId: patientId })
@@ -21,7 +21,7 @@ export const commentService = {
         return getInfoUserComment;
     },
 
-};
+}; */
 
 
 
