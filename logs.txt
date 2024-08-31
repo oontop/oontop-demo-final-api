@@ -3,3 +3,9 @@
 2024-08-31T19:23:15.398Z GET /api-docs/swagger-ui-bundle.js Query Params: {}
 2024-08-31T19:23:15.403Z GET /api-docs/swagger-ui-standalone-preset.js Query Params: {}
 2024-08-31T19:23:15.406Z GET /api-docs/swagger-ui-init.js Query Params: {}
+2024-08-31T19:33:26.532Z GET /api-docs/ Query Params: {}
+2024-08-31T19:33:26.557Z GET /api-docs/swagger-ui.css Query Params: {}
+2024-08-31T19:33:26.563Z GET /api-docs/swagger-ui-bundle.js Query Params: {}
+2024-08-31T19:33:26.566Z GET /api-docs/swagger-ui-standalone-preset.js Query Params: {}
+2024-08-31T19:33:26.569Z GET /api-docs/swagger-ui-init.js Query Params: {}
+2024-08-31T19:33:26.779Z GET /api-docs/favicon-32x32.png Query Params: {}
