@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import { mergedPatientService } from "../services/merged-patients-service";
 
-import { validateToken } from "../middleware/validate-token";
+/* import { validateToken } from "../middleware/validate-token"; */
 
 import OonTopError from "../errors/OonTopError";
 import { Logger } from "../logs/logger";
@@ -163,7 +163,7 @@ router.get("/:id", async (req, res, next) => {
 
 
 
-router.put("/:id", ...isAdmin, validateToken, validatePatient, async (req, res, next) => {
+router.put("/:id", validatePatient, async (req, res, next) => {
     try {
         const result = await mergedPatientService.updateMergedPatient(req.params.id, req.body);
         if (!result) {
@@ -203,7 +203,7 @@ router.put("/:id", ...isAdmin, validateToken, validatePatient, async (req, res, 
  */
 
 
-router.delete("/:id", ...isAdmin, validateToken, async (req, res, next) => {
+router.delete("/:id", async (req, res, next) => {
 
     try {
         await mergedPatientService.deleteMergedPatient(req.params.id);

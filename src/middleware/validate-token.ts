@@ -1,4 +1,4 @@
-import { RequestHandler, Request } from "express";
+/* import { RequestHandler, Request } from "express";
 import OonTopError from "../errors/OonTopError";
 import { authService } from "../services/auth-service";
 
@@ -24,3 +24,4 @@ const validateToken: RequestHandler = (req, res, next) => {
 };
 
 export { validateToken, extractToken };
+ */
