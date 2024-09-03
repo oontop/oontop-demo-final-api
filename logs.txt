@@ -1,0 +1,8 @@
+2024-09-03T18:23:22.438Z GET /api/v1/patients Query Params: {}
+2024-09-03T18:23:22.476Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:01:37.870Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:01:37.912Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:38:59.814Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:38:59.845Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:40:14.600Z GET /api/v1/patients Query Params: {}
+2024-09-03T19:40:14.637Z GET /api/v1/patients Query Params: {}

@@ -1,7 +1,10 @@
 import { Router } from "express";
-import { patientService } from "../services/patient-service";
+import { patientServiceFactory } from "../services/patientServiceFactory";
 
 const router = Router();
+
+const patientService = patientServiceFactory();
+
 
 /**
  * @swagger

@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { mergedPatientService } from "../services/merged-patients-service";
+import { mergedPatientServiceFactory } from "../services/mergedPatientServiceFactory";
 
 
 
@@ -14,6 +14,8 @@ import { validatePatient } from "../middleware/joi";
 
 
 const router = Router();
+
+const mergedPatientService = mergedPatientServiceFactory();
 
 /**
  * @swagger

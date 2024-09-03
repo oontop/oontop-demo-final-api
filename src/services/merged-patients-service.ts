@@ -1,29 +1,15 @@
-import { IMergedPatient } from "../@types/@types";
-import MergedPatient from "../db/models/merged-patient-model";
+import { IMergedPatientService } from './interfaces/IMergedPatientService';
+import { MongoMergedPatientService } from './mongo/MongoMergedPatientService';
+import { FirebaseMergedPatientService } from './firebase/FirebaseMergedPatientService';
 
-export const mergedPatientService = {
+export const mergedPatientServiceFactory = (): IMergedPatientService => {
+    const databaseType = process.env.DATABASE_TYPE || 'MongoDB';
 
-
-    saveMergedPatient: async (data: IMergedPatient) => {
-
-        const newMergedPatient = new MergedPatient(data);
-        return await newMergedPatient.save();
-    },
-
-    getAllMergedPatients: async () => MergedPatient.find(),
-
-
-    getMergedPatientById: async (id: string) => {
-        return MergedPatient.findById(id);
-    },
-
-    deleteMergedPatient: async (id: string) => {
-        return MergedPatient.findByIdAndDelete(id);
-    },
-
-    updateMergedPatient: async (id: string, data: IMergedPatient) => {
-        return MergedPatient.findByIdAndUpdate(id, data, { new: true })
-    },
-
-
+    switch (databaseType) {
+        case 'Firebase':
+            return new FirebaseMergedPatientService();
+        case 'MongoDB':
+        default:
+            return new MongoMergedPatientService();
+    }
 };
