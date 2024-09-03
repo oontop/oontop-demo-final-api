@@ -1,71 +1,3 @@
-/* const users = [
-    {
-        name: {
-            first: "Admin - Eliyahu",
-            middle: "",
-            last: "Levi",
-        },
-        phone: "0507123012",
-        email: "adminE@gmail.com",
-        password: "Abc!123Abc",
-        address: {
-            state: "IL",
-            country: "Israel",
-            city: "Tel aviv",
-            street: "Herzel",
-            houseNumber: 5,
-            zip: "8920435",
-        },
-
-        isBusiness: true,
-        isAdmin: true,
-
-    },
-    {
-        "name": {
-            "first": "Admin - Idan",
-            "middle": "",
-            "last": "Ofek"
-        },
-        "phone": "0507123011",
-        "email": "adminI@gmail.com",
-        "password": "Abc!123Abc",
-        "address": {
-            "state": "NY",
-            "country": "USA",
-            "city": "New York",
-            "street": "5th Avenue",
-            "houseNumber": 3,
-            "zip": "10001"
-        },
-
-        "isBusiness": true,
-        "isAdmin": true
-    },
-    {
-        "name": {
-            "first": "Admin - Uriel",
-            "middle": "",
-            "last": "Neuberger"
-        },
-        "phone": "0507123022",
-        "email": "adminU@gmail.com",
-        "password": "Abc!123Abc",
-        "address": {
-            "state": "CA",
-            "country": "USA",
-            "city": "Los Angeles",
-            "street": "Sunset Blvd",
-            "houseNumber": 2,
-            "zip": "90001"
-        },
-
-        "isBusiness": true,
-        "isAdmin": false
-    }
-
-]; */
-
 
 const patients = [
     {
@@ -375,4 +307,4 @@ const patients = [
 ];
 
 
-export { /* users, */ patients };
+export { patients };

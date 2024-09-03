@@ -7,7 +7,7 @@ import errorHandler from './middleware/error-handler';
 import { Logger } from './logs/logger';
 import cors from 'cors';
 import { patientsRouter } from './routes/patients';
-/* import usersRouter from './routes/users'; */
+
 import { mergedpatientsRouter } from './routes/mergedpatients';
 
 import swaggerJsDoc from 'swagger-jsdoc';
@@ -31,7 +31,7 @@ app.use(cors({ origin: "*" }))
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-/* app.use("/api/v1/users", usersRouter); */
+
 app.use("/api/v1/patients", patientsRouter);
 app.use("/api/v1/merged-patients", mergedpatientsRouter);
 
